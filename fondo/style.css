@@ -1,0 +1,120 @@
+.escenario{
+    display: flex;
+    position: relative;
+    height: 630px;
+    width: 100%;
+    background-image: url(img/Fondo.jpg);
+}
+
+.car{
+    position: absolute;
+    bottom: 40px;
+    left: 500px;
+}
+
+.llanta_1{
+    position: absolute;
+    left: 552px;
+    bottom: 17px;
+    width: 63px;
+    height: 63px; 
+}
+
+.uno{
+    animation: uno 2s infinite linear;
+}
+
+@keyframes fondo{
+ 100%{
+    background-position-x: -1500px;
+}
+} 
+
+.fondito{
+ animation: fondo 2s infinite linear;
+}
+
+@keyframes uno{
+    100%{
+        transform: rotate(1000deg);
+    }
+}
+
+.llanta_2{
+    position: absolute;
+    left: 778px;
+    bottom: 17px;
+    width: 63px;
+    height: 63px; 
+} 
+
+.llantita{
+    animation: dos 2s infinite linear; 
+}
+
+@keyframes dos{
+    100%{
+        transform: rotate(1000deg);
+    }
+}
+
+.luz{
+    position: absolute;
+    bottom: 47px;
+    left: 850px;
+}
+.luzMover{
+    animation: luz 3s infinite linear;
+    animation: atras 3s infinite linear;
+
+}
+@keyframes luz{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+.oculto{
+    display: none;
+}
+.atras{
+    left: 490px;
+    position: absolute;
+    bottom: 75px;
+}
+
+@keyframes atras{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.humo{
+    background: url(./img/Humo.png);
+    position: absolute;
+    left: 400px;
+    bottom: 50px;
+    width: 95.2px;
+    height: 30px;
+}
+
+.humoMover{
+    animation: humito 1s infinite steps(5);
+
+}
+
+@keyframes humito {
+
+100%{
+    background-position-x: 476px;
+}
+
+}
+
